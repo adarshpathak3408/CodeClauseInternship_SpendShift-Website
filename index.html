@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Expense Tracker</h2>
+    </header>
+
+    <div class="container">
+        <h4>Your Balance</h4>
+        <h1 id="balance">₹0.00</h1>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="money plus">+₹0.00</p>
+            </div>
+            <div>
+                <h4>Expense</h4>
+                <p id="money-minus" class="money minus">-₹0.00</p>
+            </div>
+        </div>
+
+        <h3>History</h3>
+        <ul id="list" class="list">
+            <!-- Income and Expense Items Will Be Added Here  -->
+        </ul>
+
+        <h3>Add New Transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Name</label>
+                <input type="text" id="text" autocomplete="off" placeholder="Enter Name of Transaction..." />
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount <br />
+                </label>
+                <input type="number" id="amount" autocomplete="off" placeholder="Enter Amount..." />
+            </div>
+            <button class="btn">Add Transaction</button>
+        </form>
+
+        <button class="clear-section">
+            Clear
+        </button>
+    </div>
+
+    <div id="footer-details">
+        <footer> Developed By - &nbsp; Adarshkumar Pathak &#x2B50; </footer>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
